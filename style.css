@@ -89,7 +89,7 @@ body {
     height: 6px;
     border-radius: 6px; 
     width: 140px;
-    transition: 0.05s transform cubic-bezier(0.84, 2.26, 0.63, 1.25);
+    transition: 0.1s transform cubic-bezier(0.84, 2.26, 0.63, 1.25);
     transform-origin: 100%;
     z-index: 0;
 }
@@ -98,12 +98,10 @@ body {
     width: 100px;
     background: #A6E22E;
     z-index: 1;
-    transition-duration: 0.2s;
 }
 
 .minute-hand {
     background: #66D9EF;
-    transition-duration: 0.1s;
 }
 
 .second-hand {

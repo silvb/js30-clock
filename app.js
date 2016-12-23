@@ -3,7 +3,7 @@ function rotateHands(hand, degrees) {
     if (degrees === 90) {
         hand.style['transition-duration'] = '0s';
     } else {
-        hand.style['transition-duration'] = '0.05s';
+        hand.style['transition-duration'] = '0.1s';
     }
 
     hand.style.transform = `rotate(${degrees}deg)`;
