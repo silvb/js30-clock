@@ -1,0 +1,114 @@
+/* colors: #F92672 #A6E22E #FD971F #66D9EF #AE81FF #272822 */
+
+body {
+    background-color: #272822;
+    padding: 10% 10% 20% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    border-radius: 50%;
+    border: 16px solid #AE81FF;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-face {
+    position: relative;
+}
+
+.tick {
+    background-color: #FD971F;
+    height: 6px;
+    border-radius: 6px;
+    width: 30px;
+    transform-origin: calc(100% + 121px);
+    position: absolute;
+    top: calc(50% - 3px);
+    right: calc(50% + 121px);
+    z-index: -1;
+}
+
+.tick:nth-child(1) {
+    transform: rotate(120deg);
+}
+
+.tick:nth-child(2) {
+    transform: rotate(150deg);
+}
+
+.tick:nth-child(3) {
+    transform: rotate(180deg);
+}
+
+.tick:nth-child(4) {
+    transform: rotate(210deg);
+}
+
+.tick:nth-child(5) {
+    transform: rotate(240deg);
+}
+
+.tick:nth-child(6) {
+    transform: rotate(270deg);
+}
+
+.tick:nth-child(7) {
+    transform: rotate(300deg);
+}
+
+.tick:nth-child(8) {
+    transform: rotate(330deg);
+}
+
+.tick:nth-child(9) {
+    transform: rotate(360deg);
+}
+
+.tick:nth-child(10) {
+    transform: rotate(30deg);
+}
+
+.tick:nth-child(11) {
+    transform: rotate(60deg);
+}
+
+.tick:nth-child(12) {
+    transform: rotate(90deg);
+}
+
+.hand {
+    position: absolute;
+    top: calc(50% - 3px);
+    right: 50%;
+    height: 6px;
+    border-radius: 6px; 
+    width: 140px;
+    transition: 0.05s transform cubic-bezier(0.84, 2.26, 0.63, 1.25);
+    transform-origin: 100%;
+    z-index: 0;
+}
+
+.hour-hand {
+    width: 100px;
+    background: #A6E22E;
+    z-index: 1;
+    transition-duration: 0.2s;
+}
+
+.minute-hand {
+    background: #66D9EF;
+    transition-duration: 0.1s;
+}
+
+.second-hand {
+    top: calc(50% - 1px);
+    right: 50%;
+    height: 2px;
+    background: #F92672;
+}
