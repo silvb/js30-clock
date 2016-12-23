@@ -10,13 +10,13 @@ body {
 }
 
 .clock {
-    border-radius: 50%;
-    border: 16px solid #AE81FF;
-    width: 30rem;
-    height: 30rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+    border: 16px solid #AE81FF;
+    flex: 0 0 30rem;
+    height: 30rem;
 }
 
 .clock-face {
@@ -27,7 +27,7 @@ body {
     background-color: #FD971F;
     height: 6px;
     border-radius: 6px;
-    width: 30px;
+    width: 2rem;
     transform-origin: calc(100% + 13rem + 3px);
     position: absolute;
     top: calc(50% - 3px);
