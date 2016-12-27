@@ -25,9 +25,9 @@ body {
 
 .tick {
     background-color: #FD971F;
-    height: 6px;
-    border-radius: 6px;
-    width: 2rem;
+    height: 1rem;
+    border-radius: 50%;
+    width: 1rem;
     transform-origin: calc(100% + 13rem + 3px);
     position: absolute;
     top: calc(50% - 3px);
